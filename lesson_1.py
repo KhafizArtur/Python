@@ -13,11 +13,31 @@
 # print(f'Площадь трапеции, см^2: {s}')
 # print('*' *50)
 # Задание 2
-second=int(input('Введите количество секунд :'))
-hour =second//3600
-minute = (second-hour*3600)//60
-sec = (second-hour*3600)%60
-print(f'чч: {hour} мм:{minute} сс:{sec}')
+# second=int(input('Введите количество секунд :'))
+# hour =second//3600
+# minute = (second-hour*3600)//60
+# sec = (second-hour*3600)%60
+# print(f'чч: {hour} мм:{minute} сс:{sec}')
+# Задание 3
+# n=input('Введите число :')
+# nn = n*2
+# nnn = n*3
+# n= int(n)
+# nn = int(nn)
+# nnn = int(nnn)
+# print(f'Сумма {n} + {nn} + {nnn} = {n+nn+nnn}')
+
+# Задание 4
+num=int(input('Введите целое число :'))
+max=0
+while num>0:
+    last=num%10
+    num=num//10
+    if last>max:
+        max=last
+    else:
+        max=max
+print(f'Самая большая цифра в числе: {max} ')
 
 
 
