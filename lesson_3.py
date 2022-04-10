@@ -67,11 +67,12 @@ def sum_li():
                 print('Один из элементов не число и не спец.символ')
         print(sum)
 
-
-
+def int_func(text):
+    uptext=text.title()
+    return uptext
 
 print('*' * 50)
-print('Задание 2')
+print('Задание 1')
 try:
     div1 = int(input('Введите делимое:'))
     div2 = int(input('Введите делитель:'))
@@ -115,3 +116,8 @@ sum_li()
 
 print('*' * 50)
 print('Задание 6, 7')
+try:
+    text = input('Введите текст через пробел:')
+    print(int_func(text))
+except ValueError:
+    print('Это не текст')
