@@ -68,8 +68,12 @@ def sum_li():
         print(sum)
 
 def int_func(text):
-    uptext=text.title()
-    return uptext
+    if text == text.lower():
+        uptext=text.title()
+        return uptext
+    else:
+        print(f'В слове {text} не все буквы строчные ')
+        return
 
 print('*' * 50)
 print('Задание 1')
@@ -117,7 +121,8 @@ sum_li()
 print('*' * 50)
 print('Задание 6, 7')
 try:
-    text = input('Введите текст через пробел:')
-    print(int_func(text))
+    text = input('Введите слова из строчных букв через пробел:').split()
+    for i in text:
+        print(int_func(i))
 except ValueError:
     print('Это не текст')
